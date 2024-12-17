@@ -19,7 +19,15 @@ app.post('/analyze', (req, res) => {
     }
 
     const result = sentiment.analyze(text);
-    res.json(result);
+
+    const topPositive = result.positive.slice(0, 3);
+    const topNegative = result.negative.slice(0, 3);
+
+    res.json({
+        ...result,
+        topPositive,
+        topNegative,
+    });
 });
 
 app.listen(port, () => {
