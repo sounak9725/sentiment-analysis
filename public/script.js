@@ -23,12 +23,13 @@ document.getElementById('analyzeBtn').addEventListener('click', async () => {
         document.getElementById('positiveWords').innerHTML = `<strong>Positive Words:</strong> ${result.positive.join(', ')}`;
         document.getElementById('negativeWords').innerHTML = `<strong>Negative Words:</strong> ${result.negative.join(', ')}`;
 
-        // Count Positive, Negative, and Neutral Words
+        // Count Positive Negative and Neutral Words
         const positiveCount = result.positive.length;
         const negativeCount = result.negative.length;
         const neutralCount = text.split(' ').length - (positiveCount + negativeCount);
 
-        // Render Chart
+        // Render Chart - used chart.js
+
         renderChart(positiveCount, negativeCount, neutralCount);
     }
 });
