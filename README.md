@@ -88,6 +88,7 @@ This project is licensed under the MIT License. Feel free to use and modify it a
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 ## Acknowledgments
+- Sounak Bera - Coder.
 - [Sentiment Library](https://github.com/thisandagain/sentiment)
 - [Chart.js](https://www.chartjs.org/) for charting capabilities.
 
